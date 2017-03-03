@@ -61,7 +61,7 @@ public class HabitHelper extends SQLiteOpenHelper {
 
     }
 
-    private void readHabit()
+    private Cursor readHabit()
     {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -81,6 +81,6 @@ public class HabitHelper extends SQLiteOpenHelper {
                 null
         );
 
-
+        return cursor;
     }
 }
